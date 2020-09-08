@@ -31,7 +31,8 @@ Created a platform event object and process builder to publish it.
 - I have updated the JSON structure to accept list of input so that it can accept multiple records at a time.
 - Also, please note as type,time,date are system data types so we can not use the in the wrapper class.
 - So the updated JSON can be as below.
-[
+
+**[
    {
       "abid":"ACM 123 456 789",
       "accountNumber":1231,
@@ -44,10 +45,10 @@ Created a platform event object and process builder to publish it.
       "timeInput":"17:32:25",
       "typeInput":"credit"
    }
-]
+]**
 
 OR
-[
+**[
    {
       "abid":"ACM 123 456 789",
       "accountNumber":1231,
@@ -73,6 +74,6 @@ OR
       "typeInput":"credit"
    }
    
-]
+]**
 
     
