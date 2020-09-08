@@ -12,7 +12,7 @@ private class ACM_TransactionWebServiceTest {
     
     @isTest
     private static void invokeTranactionWebServicetestDebit(){
-        
+        //Given
         RestRequest req = new RestRequest();
         RestResponse res = new RestResponse();
         
@@ -26,10 +26,12 @@ private class ACM_TransactionWebServiceTest {
         headers.put('Content-Type', 'application/json');
         RestContext.request.requestBody = Blob.valueOf('[{"abid":"ACM 123 456 789","accountNumber":1231,"amount":125.68,"currency":"AUD","dateInput":"2020/01/01","merchantABN":123456789,"merchantBSB":123456,"merchantName":"Beau Flowers","timeInput":"17:32:25","typeInput":"debit"}]');
         
+        //When
         Test.startTest();
         Boolean isSuccess = ACM_TransactionWebService.createTransactionHistoryRecord();
         Test.stopTest();
         
+        //Then
         Transaction_History__c tranHistory = [SELECT id,Amount__c from Transaction_History__c LIMIT 1];
         System.assert(true,isSuccess);
         System.assertEquals(-125.68, tranHistory.Amount__c);
@@ -37,7 +39,7 @@ private class ACM_TransactionWebServiceTest {
     }
     @isTest
     private static void invokeTranactionWebServicetestCredit(){
-        
+        //Given
         RestRequest req = new RestRequest();
         RestResponse res = new RestResponse();
         
@@ -50,11 +52,12 @@ private class ACM_TransactionWebServiceTest {
         
         headers.put('Content-Type', 'application/json');
         RestContext.request.requestBody = Blob.valueOf('[{"abid":"ACM 123 456 789","accountNumber":1231,"amount":126.68,"currency":"AUD","dateInput":"2020/01/01","merchantABN":123456789,"merchantBSB":123456,"merchantName":"Beau Flowers","timeInput":"17:32:25","typeInput":"credit"}]');
-        
+        //When
         Test.startTest();
         Boolean isSuccess = ACM_TransactionWebService.createTransactionHistoryRecord();
         Test.stopTest();
         
+        //Then
         Transaction_History__c tranHistory = [SELECT id,Amount__c from Transaction_History__c LIMIT 1];
         System.assert(true,isSuccess);
         System.assertEquals(126.68, tranHistory.Amount__c);
