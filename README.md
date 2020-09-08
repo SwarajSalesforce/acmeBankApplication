@@ -47,7 +47,8 @@ Created a platform event object and process builder to publish it.
    }
 ]**
 
-OR
+Bulk
+------
 **[
    {
       "abid":"ACM 123 456 789",
