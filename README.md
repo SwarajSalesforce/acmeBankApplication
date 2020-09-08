@@ -66,7 +66,7 @@ Created a platform event object and process builder to publish it.
 
 ### Updated Sample JSON format for single record:
 
- {
+[{
       "abid":"ACM 123 456 789",
       "accountNumber":1232,
       "amount":125.68,
