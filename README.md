@@ -21,6 +21,8 @@ Created auto number field with the formatting provided in the requirement doc.
 
 ## Pubish customer account detalils on creation
 Created a platform event object and process builder to publish it.
+![image](https://user-images.githubusercontent.com/18612751/92447370-78430e80-f1fa-11ea-9cf6-ea0a57b53145.png)
+
 
 
 # Part 3: Receiving Transactions
@@ -29,22 +31,11 @@ Created a platform event object and process builder to publish it.
 - I have updated the JSON structure to accept list of input so that it can accept multiple records at a time.
 - Also, please note as type,time,date are system data types so we can not use the in the wrapper class.
 - So the updated JSON can be as below.
-[
-   {
-      "abid":"ACM 123 456 789",
-      "accountNumber":1231,
-      "amount":125.68,
-      "currency":"AUD",
-      "dateInput":"2020/01/01",
-      "merchantABN":123456789,
-      "merchantBSB":123456,
-      "merchantName":"Beau Flowers",
-      "timeInput":"17:32:25",
-      "typeInput":"credit"
-   }
-]
 
-OR
+![image](https://user-images.githubusercontent.com/18612751/92448960-b0e3e780-f1fc-11ea-98a4-50f60b879e69.png)
+
+### Updated Sample JSON format for bulk records:
+
 [
    {
       "abid":"ACM 123 456 789",
@@ -73,4 +64,21 @@ OR
    
 ]
 
+### Updated Sample JSON format for single record:
+
+[{
+      "abid":"ACM 123 456 789",
+      "accountNumber":1232,
+      "amount":125.68,
+      "currency":"AUD",
+      "dateInput":"2020/01/01",
+      "merchantABN":123456789,
+      "merchantBSB":123456,
+      "merchantName":"Beau Flowers",
+      "timeInput":"17:32:25",
+      "typeInput":"credit"
+   }
+   
+]
     
+   
