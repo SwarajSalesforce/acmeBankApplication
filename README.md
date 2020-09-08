@@ -34,6 +34,8 @@ Created a platform event object and process builder to publish it.
 
 ![image](https://user-images.githubusercontent.com/18612751/92448960-b0e3e780-f1fc-11ea-98a4-50f60b879e69.png)
 
+### Updated Sample JSON format for bulk records:
+
 [
    {
       "abid":"ACM 123 456 789",
@@ -48,6 +50,23 @@ Created a platform event object and process builder to publish it.
       "typeInput":"credit"
    },
     {
+      "abid":"ACM 123 456 789",
+      "accountNumber":1232,
+      "amount":125.68,
+      "currency":"AUD",
+      "dateInput":"2020/01/01",
+      "merchantABN":123456789,
+      "merchantBSB":123456,
+      "merchantName":"Beau Flowers",
+      "timeInput":"17:32:25",
+      "typeInput":"credit"
+   }
+   
+]
+
+### Updated Sample JSON format for singel records:
+
+ {
       "abid":"ACM 123 456 789",
       "accountNumber":1232,
       "amount":125.68,
