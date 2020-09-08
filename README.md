@@ -44,23 +44,6 @@ Created a platform event object and process builder to publish it.
       "merchantName":"Beau Flowers",
       "timeInput":"17:32:25",
       "typeInput":"credit"
-   }
-]**
-
-Bulk
-------
-**[
-   {
-      "abid":"ACM 123 456 789",
-      "accountNumber":1231,
-      "amount":125.68,
-      "currency":"AUD",
-      "dateInput":"2020/01/01",
-      "merchantABN":123456789,
-      "merchantBSB":123456,
-      "merchantName":"Beau Flowers",
-      "timeInput":"17:32:25",
-      "typeInput":"credit"
    },
     {
       "abid":"ACM 123 456 789",
