@@ -21,7 +21,8 @@ Created auto number field with the formatting provided in the requirement doc.
 
 ## Pubish customer account detalils on creation
 Created a platform event object and process builder to publish it.
-https://github.com/SwarajSalesforce/acmeBankApplication/issues/1#issue-695635801
+![image](https://user-images.githubusercontent.com/18612751/92447370-78430e80-f1fa-11ea-9cf6-ea0a57b53145.png)
+
 
 
 # Part 3: Receiving Transactions
