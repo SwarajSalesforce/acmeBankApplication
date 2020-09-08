@@ -32,7 +32,9 @@ Created a platform event object and process builder to publish it.
 - Also, please note as type,time,date are system data types so we can not use the in the wrapper class.
 - So the updated JSON can be as below.
 
-**[
+![image](https://user-images.githubusercontent.com/18612751/92448960-b0e3e780-f1fc-11ea-98a4-50f60b879e69.png)
+
+[
    {
       "abid":"ACM 123 456 789",
       "accountNumber":1231,
@@ -58,6 +60,6 @@ Created a platform event object and process builder to publish it.
       "typeInput":"credit"
    }
    
-]**
-
+]
     
+   
