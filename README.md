@@ -1,7 +1,7 @@
 
 # Part 1: Modelling
 
-## Two record types
+## RecordType creation
 I have created two record types to Store customer Account and Financial account
 
 ## Junction Object to relate both type accounts
