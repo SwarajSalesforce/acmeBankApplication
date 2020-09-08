@@ -13,5 +13,4 @@
     <tabs>standard-Account</tabs>
     <tabs>Transaction_History__c</tabs>
     <uiType>Lightning</uiType>
-    <utilityBar>Acme_Bank_UtilityBar</utilityBar>
 </CustomApplication>
