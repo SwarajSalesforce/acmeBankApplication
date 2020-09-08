@@ -1,29 +1,29 @@
 
-## Part 1: Modelling
+# Part 1: Modelling
 
-# Two record types
+## Two record types
 I have created two record types to Store customer Account and Financial account
 
-# Junction Object to relate both type accounts
+## Junction Object to relate both type accounts
 As in the second point it says All Customers can have Financial Accounts, So i have created on junction object Account relationsip to relate both type accounts.
 
-# Custom Object to store transaction history
+## Custom Object to store transaction history
 Also, to store transaction history, i have created a custom object to store all the transaction related information coming from the external system.
 
-# Roll up summary field sum the amount from the child transaction records
+## Roll up summary field sum the amount from the child transaction records
 Created roll up summary field to sum the amount of child transaction records.
 
 
-## Part 2: Provisioning
+# Part 2: Provisioning
 
-# ABID generation
+## ABID generation
 Created auto number field with the formatting provided in the requirement doc.
 
-# Pubish customer account detalils on creation
+## Pubish customer account detalils on creation
 Created a platform event object and process builder to publish it.
 
 
-## Part 3: Receiving Transactions
+# Part 3: Receiving Transactions
 
 - Created ACM_TransactionWebService class to get input from External system.
 - I have updated the JSON structure to accept list of input so that it can accept multiple records at a time.
