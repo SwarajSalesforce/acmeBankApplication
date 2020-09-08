@@ -64,7 +64,7 @@ Created a platform event object and process builder to publish it.
    
 ]
 
-### Updated Sample JSON format for singel records:
+### Updated Sample JSON format for single record:
 
  {
       "abid":"ACM 123 456 789",
